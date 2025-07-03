@@ -1,0 +1,23 @@
+:root{
+    --primary-color:#83a7b3;
+    --secondary-color: #86af99;
+    --accent-color: #000;
+    --accent-secondary-color: #b2110b;
+
+}
+
+.head-font {
+  color: var(--accent-color);
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.body-font {
+  color: var(--accent-color);
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
