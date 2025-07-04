@@ -21,3 +21,25 @@
   font-weight: 300;
   font-style: normal;
 }
+
+.logo {
+
+}
+
+.navigation{
+    
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-around;
+    height: 25px;
+    width: 96%;
+}
+
+.navigation :hover{
+    color: var(--accent-secondary-color);
+    font-weight: bolder;
+}

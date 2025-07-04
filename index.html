@@ -6,14 +6,14 @@
     <meta name="author" content="Victoria Lutz">
     <meta name = "description" content="A landing page with information about the author">
     <title>Week 1</title>
-    <link rel="stylesheet" href="../wdd231/styles/style.css">
-    <link rel="stylesheet" href="../wdd231/styles/style_larger.css">
-    <script src="../wdd231/scripts/last_modified.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style_larger.css">
+    <script src="./scripts/last_modified.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
-    <header>
+    <header class="menu">
         <img class = "logo" src="./images/temp_logo.png" alt="Logo that looks like a house, current filler until i get a proper logo for this project">
         <h1 class="head-font">Site Name</h1>
         <ul class="navigation">
@@ -23,6 +23,43 @@
         </ul>
     </header>
     <h1 class="head-font">HOME</h1>
+    <section class="about">
+        <h2 class="head-font">About Me!</h2>
+        <p class="body-font">My name is Victoria Lutz, I am a visually impaired martial artist and 
+            artist in general. I was born and raised in WoodsCross Utah and have stayed here 
+            for 24 years.
+            I am currently working as a Veterinary Technician Assistant and love animals!</p>
+    </section>
+    <section class="profile">
+        <h2 class="body-font">Student Photo</h2>
+        <img src="./images/profile.jpg" alt="a photo of me and my boyfriend in Portalnd Castle by a cannon">
+    </section>
+
+    <section class="courses">
+        <h2 class="body-font">Courses!</h2>
+
+           <ul class="courses">
+            <li class="body-font" href = "#">ALL</li>
+            <li class="body-font" href = "#">WDD</li>
+            <li class="body-font" href = "#">CSE</li>
+           </ul>
+           <ul class="wdd">
+            <li class="body-font" href = "#">WDD 130</li>
+            <li class="body-font" href = "#">WDD 131</li>
+            <li class="body-font" href = "#">WDD 231</li>
+           </ul>
+           <p class="body-font">In total credit for courses listed above are six.</p>
+
+
+    </section>
+    <footer>
+        <a href="https://www.linkedin.com/in/victoria-lutz-775852314/"><img src = "./images/linkedin-linked-in-svgrepo-com.svg" alt="linkedin logo"></a>
+        <a href="https://github.com/ToriLutz"><img src = "./images/github-square-svgrepo-com.svg" alt="github logo"></a>
+        <a href="https://www.youtube.com"><img src="./images/youtube-168-svgrepo-com.svg" alt="youtube logo"></a>
+        <p class="body-font">&copy; <span id="currentYear"></span> Victoria Lutz | Utah</p>
+        <p id="lastModified"></p>
+
+    </footer>
     
     
 </body>
