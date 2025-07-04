@@ -1,6 +1,6 @@
 :root{
     --primary-color:#83a7b3;
-    --secondary-color: #86af99;
+    --secondary-color: #a7b383;
     --accent-color: #000;
     --accent-secondary-color: #b2110b;
 
@@ -23,12 +23,20 @@
 }
 
 .logo {
+    width: 100px;
+    height: auto;
+}
 
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .navigation{
     
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -42,4 +50,24 @@
 .navigation :hover{
     color: var(--accent-secondary-color);
     font-weight: bolder;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--secondary-color);
+}
+
+.card-header{
+    background-color: var(--primary-color);
+    height: 4rem;
+    text-align: center;
+    padding-top: 1rem ;
+}
+
+.link-img{
+    width: 100px;
+    height: auto;
+
 }
