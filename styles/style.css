@@ -1,7 +1,7 @@
 :root{
     --primary-color:#83a7b3;
-    --secondary-color: #b383a7;
-    --accent-color: #000;
+    --secondary-color: #f5e1f0;
+    --accent-color: #17011e;
     --accent-secondary-color: #b2110b;
 
 }
@@ -67,8 +67,19 @@
     
 }
 
+.courses{
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
 .link-img{
     width: 100px;
     height: auto;
 
+}
+footer{
+    background-color: var(--secondary-color);
 }
