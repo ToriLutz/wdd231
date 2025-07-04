@@ -1,6 +1,6 @@
 :root{
     --primary-color:#83a7b3;
-    --secondary-color: #f5e1f0;
+    --secondary-color: #f0f8ff;
     --accent-color: #17011e;
     --accent-secondary-color: #b2110b;
 
@@ -64,15 +64,43 @@
     height: 4rem;
     text-align: center;
     padding-top: 1rem ;
+    margin-left: 2rem;
     
 }
+.profile-img{
+    height: 500px;
+    padding: 2rem;
+}
 
-.courses{
+.about{
+    text-align: center;
+    width: 100%;
+}
+
+.course_nav{
+  display: grid;
+  grid-template-rows: auto;
+    list-style: none;
+}
+.course{
     background-color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+    border: var(--accent-color) 1px solid;
+    border-radius: 5%;
+    margin: 1%;
+    height: 25px;
+    width:30%;
+}
+.wdd{
+    margin: 0.5%;
+    padding: 10px;
+    width: 30%;
+    height: 15px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
+
 }
 
 .link-img{
