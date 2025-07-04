@@ -1,6 +1,6 @@
 :root{
     --primary-color:#83a7b3;
-    --secondary-color: #a7b383;
+    --secondary-color: #b383a7;
     --accent-color: #000;
     --accent-secondary-color: #b2110b;
 
@@ -64,6 +64,7 @@
     height: 4rem;
     text-align: center;
     padding-top: 1rem ;
+    
 }
 
 .link-img{
