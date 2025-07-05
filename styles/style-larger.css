@@ -66,4 +66,10 @@
        align-items: center;
    }
 
+   .boxCourse{
+    margin-top: 40%;
+    display: flex;
+   }
+
+
 }

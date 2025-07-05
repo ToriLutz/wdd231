@@ -87,6 +87,11 @@
     font-weight: bolder;
 }
 
+.boxCourse{
+    margin: 5%;
+    display: flex;
+}
+
 .container{
   display: flex;
   flex-direction: row;
