@@ -4,6 +4,11 @@ year.innerHTML = currentYear;
 const modifiedYear = document.lastModified;
 document.getElementById('lastModified').innerText = modifiedYear;
 
+let templePics = document.querySelector('#temples');
+const allLink = document.querySelector('#all');
+const wddLink = document.querySelector('#wdd');
+const cseLink = document.querySelector('#cse');
+
 
 
 const hamburger = document.querySelector('.hamburger');
@@ -95,3 +100,76 @@ const courses = [
         completed: false
     }
 ]
+
+function clearContainer() {
+  document.querySelector(".container").innerHTML = "";
+}
+
+function displayCards(courseArray) {
+  const display = document.querySelector(".container");
+  coursesArray.forEach((course) => {
+    display.appendChild(makeCourseCard(course));
+  });
+}
+
+function initialCourseDisplay() {
+  clearContainer();
+  displayCards(courses);
+}
+
+
+allLink.addEventListener("click", () => {
+  initialCourseDisplay();
+});
+
+wddLink.addEventListener("click", () => {
+  let wdd = courses.filter((course) => {
+    const commaIndex = course.dedicated.indexOf(",");
+    const dedicated = course.dedicated.substring(0, commaIndex);
+    return Number(dedicated) < 1900;
+  });
+  clearContainer();
+  displayCards(wdd);
+});
+
+cseLink.addEventListener("click", () => {
+  let cse = courses.filter((course) => {
+    const commaIndex = course.dedicated.indexOf(",");
+    const dedicated = course.dedicated.substring(0, commaIndex);
+    return Number(dedicated) > 2000;
+  });
+  clearContainer();
+  displayCards(cseLinks);
+});
+
+
+function makeCourseCard(course) {
+  let card = document.createElement(`section`);
+  let subject = document.createElement(`h3`);
+  let title = document.createElement(`p`);
+  let credits = document.createElement(`p`);
+  let certificate = document.createElement(`p`);
+  let description = document.createElement(`p`);
+  let technology = document.createElement('p');
+  let completed = document.createElement(Boolean);
+ 
+
+  subject.textContent = course.courseName;
+  title.innerHTML = `<span class = "label"><span> ${course.title}`;
+  credits.innerHTML = `<span class = "label"><span> ${course.credits}`;
+  certificate.innerHTML = `<span class = "label"><span> ${course.certificate}`;
+  img.setAttribute("src", temple.imageUrl);
+  img.setAttribute("alt", `${temple.templeName} temple`);
+  img.setAttribute("loading", "lazy");
+
+  card.appendChild(title);
+  card.appendChild(credits);
+  card.appendChild(certificate);
+  card.appendChild(description);
+  card.appendChild(technology);
+  card.appendChild(completed);
+
+  return card;
+}
+
+initialTempleDisplay();
