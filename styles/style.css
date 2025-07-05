@@ -70,9 +70,6 @@
     background-color: var(--primary-color);
 }
 
-.course{
-    background-color: var(--secondary-color);
-}
 
 .navigation, .course-nav{
     display: flex;

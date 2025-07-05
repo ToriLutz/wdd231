@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./styles/style-larger.css">
     
     <script src="./scripts/last_modified.js" defer></script>
+    <script src="./scripts/hamburger.js" defer></script>
+    <script src="./scripts/courses.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
@@ -53,14 +55,13 @@
         <h2 class="body-font card-header">Web Certificate Courses!</h2>
 
            <ul class="course-nav">
-            <button class="body-font course">ALL</button>
-            <button class="body-font course" >WDD</button>
-            <button class="body-font course" >CSE</button>
+            <button class="body-font courseButton" value="all" title="Filter button">ALL</button>
+            <button class="body-font courseButton" value="all" title="Filter button" >WDD</button>
+            <button class="body-font courseButton" value="all" title="Filter button" >CSE</button>
            </ul>
-        <div class="body-font courses" id="courses">
-
-
-        </div>
+        <div class="boxcertificate01 boxCourse"></div>
+            <dialog id="courses-details"></dialog>
+            <p id="totalCreditsCert01">Total Credits for Certificate 1: 0</p>
            <p class="body-font wdd">In total credit for courses listed above are </p><p id="credits"></p>
 
 
