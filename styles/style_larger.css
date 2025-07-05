@@ -1,64 +1,60 @@
-@media (min-width: 350px) {
-    :root{
-    --primary-color:#83a7b3;
-    --secondary-color: #f0f8ff;
-    --accent-color: #17011e;
-    --accent-secondary-color: #b2110b;
+@media screen and (min-width: 350px) {
+   :root {
+       --primary-color: #83a7b3;
+       --secondary-color: #f0f8ff;
+       --accent-color: #17011e;
+       --accent-secondary-color: #b2110b;
+   }
 
-}
-.hamburger {
-    color: #17011e;
-    display: block;
-    position: fixed;
-    top: 15px;
-    right: 20px; 
-    cursor: pointer; 
-    z-index: 1000; 
-  }
+   .hamburger {
+       color: #17011e;
+       display: block;
+       position: fixed;
+       top: 15px;
+       right: 20px;
+       cursor: pointer;
+       z-index: 1000;
+   }
 
- 
-  .navigation.active {
-    display: block;
-    position: fixed;
-    top: 60px; 
-    right: 20px;
-    background-color: var(--secondary-color) ; 
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  }
+   .navigation.active {
+       display: block;
+       position: fixed;
+       top: 60px;
+       right: 20px;
+       background-color: var(--secondary-color);
+       padding: 10px;
+       border-radius: 5px;
+       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+   }
 
+   .hamburger.active .bar:nth-child(2) {
+       opacity: 0;
+   }
 
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  
-  .container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--secondary-color);
-  }
+   .hamburger.active .bar:nth-child(1) {
+       transform: translateY(8px) rotate(45deg);
+   }
 
-  .profile-img{
-    width: 300px;
-    height: auto;
-    margin: 0 auto 0 20%;
-}
+   .hamburger.active .bar:nth-child(3) {
+       transform: translateY(-8px) rotate(-45deg);
+   }
 
-.course-nav{
-display: grid;
-width: 30%;
-align-items: center;
-}
+   .container {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       background-color: var(--secondary-color);
+   }
 
+   .profile-img {
+       width: 300px;
+       height: auto;
+       margin: 0 auto 0 20%;
+   }
 
-
-
+   .course-nav {
+       display: grid;
+       width: 30%;
+       align-items: center;
+   }
 }
