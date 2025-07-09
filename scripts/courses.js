@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         document.querySelectorAll(".course").forEach((course) => {
             const credits = parseInt(course.getAttribute("data-credits"), 10);
-            const subject = course.getAttribute("data-subject").toUpperCase();
+            const subject = course.getAttribute("data-subject").trim().toUpperCase();
 
             if (filter === "ALL" || filter === subject) {
                 totalCredits += credits;
@@ -137,11 +137,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const boxButtons = document.querySelectorAll(".boxButton button");
     boxButtons.forEach((button) => {
         button.addEventListener("click", () => {
-            const filter = button.value.toUpperCase();
+            const filter = button.value.trim().toUpperCase();
 
             document.querySelectorAll(".course").forEach((course) => {
                 const subject = course
                     .getAttribute("data-subject")
+                    .trim()
                     .toUpperCase();
                 course.style.display =
                     filter === "ALL" || filter === subject ? "block" : "none";
