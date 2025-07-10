@@ -1,0 +1,23 @@
+:root{
+    --primary-color: #8B0000;
+    --secondary-color: #CD5C5C; /*This is for backgrounds with words only*/
+    --accent-color: #FF4500;
+    --accent-secondary-color: #ff8872;
+    --accent-tertiary-color: #f0f8ff;
+}
+
+.head-font {
+  color: black;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.body-font {
+  color: Black;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
