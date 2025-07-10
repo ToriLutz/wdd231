@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Timbuktu Traders",
+    "address": "Market Square, Timbuktu",
+    "phone_number": "+223 20 00 1234",
+    "website_url": "https://www.timbuktutraders.com",
+    "image_file": "timbuktu_traders_logo.png",
+    "membership_level": 3,
+    "industry": "Trade & Commerce",
+    "contact_email": "contact@timbuktutraders.com"
+  },
+  {
+    "name": "Sahara Tours",
+    "address": "Desert Edge Road, Timbuktu",
+    "phone_number": "+223 20 00 5678",
+    "website_url": "https://www.saharatours.tm",
+    "image_file": "sahara_tours_icon.png",
+    "membership_level": 2,
+    "industry": "Tourism",
+    "contact_email": "info@saharatours.tm"
+  },
+  {
+    "name": "Timbuktu Art Gallery",
+    "address": "Ancient City Center, Timbuktu",
+    "phone_number": "+223 20 00 9012",
+    "website_url": "https://www.timbuktuart.com",
+    "image_file": "timbuktu_art_gallery.png",
+    "membership_level": 1,
+    "industry": "Arts & Culture",
+    "contact_email": "gallery@timbuktuart.com"
+  },
+  {
+    "name": "Nomad Coffee House",
+    "address": "Oasis Road, Timbuktu",
+    "phone_number": "+223 20 00 3456",
+    "website_url": "https://www.nomadcoffeetm.com",
+    "image_file": "nomad_coffee_icon.png",
+    "membership_level": 2,
+    "industry": "Food & Beverage",
+    "contact_email": "hello@nomadcoffeetm.com"
+  },
+  {
+    "name": "Timbuktu Solar Solutions",
+    "address": "Sunrise Blvd, Timbuktu",
+    "phone_number": "+223 20 00 7890",
+    "website_url": "https://www.timbuktusolar.tm",
+    "image_file": "timbuktu_solar_logo.png",
+    "membership_level": 3,
+    "industry": "Renewable Energy",
+    "contact_email": "solar@timbuktusolar.tm"
+  },
+  {
+    "name": "Ancient Manuscripts Store",
+    "address": "Historic Library District, Timbuktu",
+    "phone_number": "+223 20 00 2345",
+    "website_url": "https://www.timbuktuarchives.com",
+    "image_file": "manuscripts_store.png",
+    "membership_level": 1,
+    "industry": "Historical Preservation",
+    "contact_email": "info@timbuktuarchives.com"
+  },
+  {
+    "name": "Desert Winds Clothing",
+    "address": "Market Lane, Timbuktu",
+    "phone_number": "+223 20 00 6789",
+    "website_url": "https://www.desertwinds.tm",
+    "image_file": "desert_winds_logo.png",
+    "membership_level": 2,
+    "industry": "Fashion & Apparel",
+    "contact_email": "sales@desertwinds.tm"
+  }
+]

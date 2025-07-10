@@ -1,7 +1,7 @@
 :root{
     --primary-color: #8B0000;
-    --secondary-color: #CD5C5C; /*This is for backgrounds with words only*/
-    --accent-color: #FF4500;
+    --secondary-color: #d65353; /*This is for backgrounds with words only*/
+    --accent-color: #ff1500;
     --accent-secondary-color: #ff8872;
     --accent-tertiary-color: #f0f8ff;
 }
@@ -21,3 +21,151 @@
   font-weight: 300;
   font-style: normal;
 }
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.main-hamburger{
+ position: relative;   
+ left: 5300%;
+ cursor: pointer;
+
+}
+
+.main-hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.main-hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.main-hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--accent-color);
+}
+
+.navigation{
+    background-color: var(--accent-secondary-color);
+}
+
+
+.navigation{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+
+.navigation :hover, .course-nav :hover, .wdd :hover{
+    color: var(--accent-color);
+    font-weight: bolder;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+header{
+    background-color: var(--secondary-color);
+    display: flex;
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.moon {
+    width: 70px;
+}
+nav{
+    left: 100px;
+}
+
+body{
+    height: 100%;
+}
+
+.hero{
+    object-fit: fill;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+.hero-img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.hero-text {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: var(--accent-secondary-color);
+  text-align: center;
+  cursor: pointer;
+}
+
+.main{
+  display: flex;
+  justify-content: space-around;
+}
+
+footer{
+    background-color: var(--accent-secondary-color);
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon{
+
+    width: 100px;
+    height: auto;
+
+}
+
+.icons
+{
+    display: flex;
+}
+
+li{
+    text-decoration: none;
+}
+
+

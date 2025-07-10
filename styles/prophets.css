@@ -23,10 +23,6 @@ h2 {
 	grid-gap: 0.25rem;
 }
 
-#keytitle {
-	font-size: larger;
-	grid-column: 1 / 3;
-}
 
 .key > div {
 	width: 0.75rem;
