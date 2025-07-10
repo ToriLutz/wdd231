@@ -1,0 +1,29 @@
+
+
+{
+    
+        "familyName": "Smiths",
+        "moveInDate": "07/24/2000",
+        "peopleInFamily": 3,
+        "bishopVisit": true,
+
+        "familyMembers": [
+        {
+            "firstName": "Sophia",
+            "gender": "F",
+            "Birthday": "06/12/1976"
+        },
+        {
+            "firstName": "Gerarld",
+            "gender": "M",
+            "Birthday": "05/22/1974"
+        },
+        {
+            "firstName": "Jane",
+            "gender": "F",
+            "Birthday": "03/18/1999"
+        }
+    ]
+    
+    
+}
