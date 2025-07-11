@@ -1,5 +1,8 @@
 const url = "https://raw.githubusercontent.com/ToriLutz/wdd231/main/chamber/scripts/data/members.json";
 const cards = document.getElementById('cards');
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
 
 async function getBusinessData() {
     try {
@@ -19,7 +22,7 @@ getBusinessData();
 const displayBusinesses = (businesses) => {
   businesses.forEach((business) => {
     const card = document.createElement("div");
-    card.classList.add("business-card", "padding-none");
+    card.classList.add("business-card", "padding-none", "grid");
 
     const businessCardHeader = document.createElement("div");
     businessCardHeader.classList.add("business-card-header", "width-100");
@@ -79,4 +82,17 @@ const displayBusinesses = (businesses) => {
 
     cards.appendChild(card);
     });
+}
+
+gridbutton.addEventListener("click", () => {
+	
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); 
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
 }
