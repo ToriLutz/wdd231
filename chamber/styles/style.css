@@ -145,6 +145,15 @@ body{
   display: flex;
   justify-content: space-around;
 }
+.forecast, .currentweather, .events{
+    display: grid;
+    grid-template-columns: auto;
+
+}
+.forecast h2, .currentweather h2, .events h2{
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
 
 .businesses{
     display: flex;
