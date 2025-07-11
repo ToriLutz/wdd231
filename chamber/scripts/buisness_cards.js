@@ -16,52 +16,67 @@ async function getBusinessData() {
 }
 
 getBusinessData();
-
 const displayBusinesses = (businesses) => {
-    businesses.forEach(business => {
-        const card = document.createElement('section');
+  businesses.forEach((business) => {
+    const card = document.createElement("div");
+    card.classList.add("business-card", "padding-none");
 
-        const name = document.createElement('h3');
-        name.textContent = business.name;
+    const businessCardHeader = document.createElement("div");
+    businessCardHeader.classList.add("business-card-header", "width-100");
 
-        const membership = document.createElement('p');
-        membership.textContent = `Membership Level: ${business.membership_level}`;
+    const name = document.createElement("h3");
+    name.textContent = business.name;
+    name.classList.add("margin-bottom-3", "padding-bottom-0");
 
-        const industry = document.createElement('p');
-        industry.textContent = `Industry: ${business.industry}`;
+    const membership = document.createElement("p");
+    membership.textContent = `Membership Level: ${business.membership_level}`;
+    membership.classList.add("margin-y-2");
 
-        const address = document.createElement('p');
-        address.textContent = `Address: ${business.address}`;
+    const industry = document.createElement("p");
+    industry.textContent = `Industry: ${business.industry}`;
+    industry.classList.add("margin-y-2");
 
-        const phoneNumber = document.createElement('p');
-        phoneNumber.textContent = `Phone: ${business.phone_number}`;
+    const businessCardBody = document.createElement("div");
+    businessCardBody.classList.add("business-card-body");
 
-        const websiteLink = document.createElement('a');
-        websiteLink.href = business.website_url;
-        websiteLink.textContent = business.website_url;
-        websiteLink.target = "_blank";
+    const businessAddressContainer = document.createElement("div");
 
-        const email = document.createElement('p');
-        email.textContent = `Email: ${business.contact_email}`;
+    const address = document.createElement("p");
+    address.textContent = `Address: ${business.address}`;
 
-        const imageurl = document.createElement('img');
-        imageurl.setAttribute('src', business.image_file);
-        imageurl.setAttribute('alt', `Image of ${business.name}`);
-        imageurl.setAttribute('loading', 'lazy');
-        imageurl.setAttribute('width', '340');
-        imageurl.setAttribute('height', '440');
+    const phoneNumber = document.createElement("p");
+    phoneNumber.textContent = `Phone: ${business.phone_number}`;
+    phoneNumber.classList.add("small-margin-bottom", "large-top-margin");
+    phoneNumber.classList.remove("big-top-margin");
 
-       
-        card.appendChild(name);
-        card.appendChild(membership);
-        card.appendChild(industry);
-        card.appendChild(address);
-        card.appendChild(phoneNumber);
-        card.appendChild(websiteLink);
-        card.appendChild(email);
-        card.appendChild(imageurl);
+    const websiteLink = document.createElement("a");
+    websiteLink.href = business.website_url;
+    websiteLink.textContent = business.website_url;
+    websiteLink.target = "_blank";
 
-        
-        cards.appendChild(card);
+    const email = document.createElement("p");
+    email.textContent = `Email: ${business.contact_email}`;
+
+    const imageurl = document.createElement("img");
+    imageurl.setAttribute("src", business.image_file);
+    imageurl.setAttribute("alt", `Image of ${business.name}`);
+    imageurl.setAttribute("loading", "lazy");
+    imageurl.setAttribute("width", "150");
+    imageurl.setAttribute("height", "150");
+
+    card.appendChild(businessCardHeader);
+    card.appendChild(businessCardBody);
+    businessCardHeader.appendChild(name);
+    businessCardHeader.appendChild(membership);
+    businessCardHeader.appendChild(industry);
+
+    businessCardBody.appendChild(imageurl);
+    businessCardBody.appendChild(businessAddressContainer);
+    businessAddressContainer.appendChild(address);
+    businessAddressContainer.appendChild(phoneNumber);
+    businessAddressContainer.appendChild(websiteLink);
+    businessAddressContainer.appendChild(email);
+
+    cards.appendChild(card);
     });
 }
