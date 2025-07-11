@@ -53,10 +53,30 @@
     
     .businesses{
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto;
+        align-items: center;
     }
     .main{
         display: grid;
         grid-template-columns: auto;
+    }
+
+    .business-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 3px;
+    width: 75%;
+    }
+
+    .business-card-header {
+        text-align: center;
+        border-bottom: 1px solid;
+    }
+
+    .business-card-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
