@@ -38,4 +38,21 @@
    .hamburger.active .bar:nth-child(3) {
        transform: translateY(-8px) rotate(-45deg);
    }
+
+   footer{
+    display: grid;
+    grid-template-columns: auto;
+   }
+
+   
+    img{
+        width: 300px;
+        height: auto;
+        margin: 1rem;
+    }
+    
+    .businesses{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 }
