@@ -233,3 +233,23 @@ li{
    flex-direction: column !important;
 }
 
+#events {
+    background-color: #f0f8ff;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.currentweather{
+    background-color: #f0f8ff;
+    padding-left: 100px;
+    padding-right: 100px;  
+}
+
+.forecast{
+    background-color: #f0f8ff;
+    padding-left: 100px;
+    padding-right: 100px;  
+}
+
+
+
