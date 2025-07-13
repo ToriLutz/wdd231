@@ -21,6 +21,8 @@ async function getBusinessData() {
 getBusinessData();
 const displayBusinesses = (businesses) => {
   businesses.forEach((business) => {
+
+    
     const card = document.createElement("div");
     card.classList.add("business-card", "padding-none", "grid");
 
