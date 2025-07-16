@@ -88,13 +88,13 @@ const displayBusinesses = (businesses) => {
 
 gridbutton.addEventListener("click", () => {
 	
-	display.classList.add("grid");
-	display.classList.remove("list");
+	cards.classList.add("grid");
+	cards.classList.remove("list");
 });
 
 listbutton.addEventListener("click", showList); 
 
 function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+	cards.classList.add("list");
+	cards.classList.remove("grid");
 }
