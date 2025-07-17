@@ -90,35 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     output(cseCourses, "CSE");
   });
 
-  // I didn't change this because it works, and is about as easy as we can make it.
-//   function displayCourseDetails(course) {
-//     // This is a simple way to make your components because it just sets the
-//     // innerHTML equal to what you would see usually. The "`" indicate a template
-//     // literal, which is basically a fancy way of saying string, but you can
-//     // have line breaks, and the "${}" indicate a variable
-//     courseDetails.innerHTML = `
-//             <button id="closeModal">X</button>
-//             <h2>${course.subject} ${course.number}</h2>
-//             <h3>${course.title}</h3>
-//             <p><strong>Credits</strong>: ${course.credits}</p>
-//             <p>${course.description}</p>
-//             <p><strong>Technologies</strong>: ${course.technology.join(
-//               ", "
-//             )}</p>
-//         `;
-//     // this just tells javascript to open it as a modal, or dialog window
-//     courseDetails.showModal();
 
-//     document.getElementById("closeModal").addEventListener("click", () => {
-//       // close the modal
-//       courseDetails.close();
-//     });
-//   }
-
-  // The tutorial you followed does some clever things like set data-subject and
-  // data-credit attributes that they use to find and parse the course credits
-  // My problem with this is that you have the data, so manipulate it directly
-  // because it is way easier.
   function output(courses, type) {
     // courses is the data, type is the subject "WDD", "CSE", or "ALL"
     const container = document.querySelector(".boxcertificate01");
@@ -148,6 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       courseDiv.addEventListener("click", () => {
         displayCourseDetails(course);
+        
       });
     });
     // call the next function to set the total credits, pass "WDD", "CSE", or "ALL"
@@ -170,21 +143,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     credits.innerHTML = totalCredits;
 
-    // The way they did it parses through the DOM and finds the data, but
-    // we already have that so I'm using it directly.
-
-    // document.querySelectorAll(".course").forEach((course) => {
-    //   const credits = parseInt(course.getAttribute("data-credits"), 10);
-    //   const subject = course.getAttribute("data-subject").trim().toUpperCase();
-
-    //   if (filter === "ALL" || filter === subject) {
-    //     totalCredits += credits;
-    //   }
-    // });
-
-    // document.getElementById(
-    //   "totalCreditsCert01"
-    // ).innerHTML = `<strong>Total Credits:</strong> ${totalCredits}`;
   }
 
   const boxButtons = document.querySelectorAll(".boxButton button");
@@ -207,9 +165,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // This is basically the same as clicking the all button
   document.querySelector('.course-nav button[value="all"]').click();
-
-  // This is a duplicate. If something breaks comment out the top version
-  // and uncomment this one to see which is working.
 
   function displayCourseDetails(course) {
     courseDetails.innerHTML = `
