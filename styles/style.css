@@ -126,7 +126,7 @@
     border: var(--accent-color) 1px solid;
     border-radius: 5%;
     margin: 3px;
-    height: 25px;
+    min-height: 25px;
     width:30%;
 }
 
