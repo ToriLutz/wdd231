@@ -41,4 +41,6 @@ function updateWeather(data) {
   weatherImg.alt = data.weather[0].description;
 }
 
+
+
 fetchWeather();

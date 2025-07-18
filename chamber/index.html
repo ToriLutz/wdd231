@@ -55,7 +55,7 @@
         </div>
 
         <div class="currentweather">
-            <script src="./scripts/weather.js" defer></script>
+            <script src="./scripts/weather.js" defer></script> <!--Today's weather-->
             <h2 class="head-font">Current Weather</h2>
             <section class="grid">
                <!--  weather data -->
@@ -74,13 +74,29 @@
                          </div>
 
             <div class="forecast">
+                <!--future forecasts-->
+                <script src="./scripts/forecast.js" defer></script>
                 <h2 class="head-font">Forecast</h2>
-                <strong>Today: </strong>
-                <span id="today"> </span>
-                <strong>Tomorrow: </strong>
-                <span id="tomorrow"></span>
-
-
+                    <div>
+                        <strong>Today: </strong>
+                        <span id="today"></span>
+                    </div>
+                    <div>
+                        <strong>Tomorrow: </strong>
+                        <span id="tomorrow"></span>
+                    </div>
+                    <div>
+                        <strong>Day 3: </strong>
+                        <span id="day3"></span>
+                    </div>
+                    <div>
+                        <strong>Day 4: </strong>
+                        <span id="day4"></span>
+                    </div>
+                    <div>
+                        <strong>Day 5: </strong>
+                        <span id="day5"></span>
+                    </div>
             </div>
 
             </section>
