@@ -16,7 +16,7 @@ onclick.addEventListener("click", onSearchForClick);
 
 
 async function getWeather(unitType, locationName) {
-    const apiUrl = `${baseApiUrl}?lat=${locationName}&appid=${apiKey}`&units=${unitType};
+    const apiUrl = `${baseApiUrl}?lat=${locationName}&appid=${apiKey}&units=${unitType}`;
        return await fetchData.json();
 }
 
