@@ -55,20 +55,32 @@
 
         <div class="currentweather">
             <h2 class="head-font" id="currentWeather">Current Weather</h2>
-            <p>partly cloudy</p>
-            <p class="body-font">high </p>
-            <p class="body-font">low </p>
-            <p class="body-font">Humidity:</p>
-            <p class="body-font">Sunrise </p>
-            <p class="body-font">Sunset</p>
+            <label for="unitType" class="switch">
+                <input type="checkbox" id="unitType" class="units" checked/>
+                <span>Metric</span>
+            </label>
+            <section class="grid">
+               <!--  weather data -->
+                 <div class="weather-data">
+                    <span class="temp">99.99</span>
+                    <span class="unit">C</span>
+                    <div class="desc">Description</div>
+                 </div>
+                 <strong>H;</strong>
+                 <span class="max">200</span>
+                 <strong>L;</strong>
+                 <span class="min">100</span>
+                 <!-- weather icons -->
+                  <img src="" alt="" class="weather">
+                  <div class="weather-icon"></div>
+                 
+
+            </section>
+
 
         </div>
 
             <div class="forecast">
-            <h2 class="head-font" id="forecast">Forecast</h2>
-            <h3 class="body-font">Today:</h3>
-            <h3 class="body-font">Tomorrow:</h3>
-            <h3 class="body-font">Thursday: </h3>
 
             </div>
 
