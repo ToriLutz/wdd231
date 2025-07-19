@@ -23,7 +23,7 @@ const getData = async () => {
 };
 
 const getDataFor7days = async (lat, lon) => {
-    const urlForecast = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&units=imperial&appid=${apiKey}`;
+    const urlForecast = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&units=imperial&appid=${api}`;
     try {
         const res = await fetch(urlForecast);
         const data = await res.json();
@@ -36,15 +36,16 @@ const getDataFor7days = async (lat, lon) => {
 function updateForecast(data) {
     console.log('Forecast data:', data);
 
-    const days = data.daily;
-    if (days && days.length >= 5) {
-        content.today.textContent = days[0].temp.day.toFixed(1) + " °F";
-        content.tomorrow.textContent = days[1].temp.day.toFixed(1) + " °F";
-        content.day3.textContent = days[2].temp.day.toFixed(1) + " °F";
-        content.day4.textContent = days[3].temp.day.toFixed(1) + " °F";
-        content.day5.textContent = days[4].temp.day.toFixed(1) + " °F";
+    const forecastDays = data.daily;
+    if (forecastDays && forecastDays.length >= 5) {
+        days.today.textContent = forecastDays[0].temp.day.toFixed(1) + " °F";
+        days.tomorrow.textContent = forecastDays[1].temp.day.toFixed(1) + " °F";
+        days.day3.textContent = forecastDays[2].temp.day.toFixed(1) + " °F";
+        days.day4.textContent = forecastDays[3].temp.day.toFixed(1) + " °F";
+        days.day5.textContent = forecastDays[4].temp.day.toFixed(1) + " °F";
     } else {
         console.log('Forecast days data missing or incomplete');
     }
 }
+
 getData();

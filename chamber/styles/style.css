@@ -145,8 +145,10 @@ body{
 .forecast, .currentweather, .events{
     display: grid;
     grid-template-columns: auto;
+    background-color: #ff8872;
 
 }
+
 
 
 
@@ -234,19 +236,19 @@ li{
 }
 
 #events {
-    background-color: #f0f8ff;
+
     padding-left: 100px;
     padding-right: 100px;
 }
 
 .currentweather{
-    background-color: #f0f8ff;
+
     padding-left: 100px;
     padding-right: 100px;  
 }
 
 .forecast{
-    background-color: #f0f8ff;
+
     padding-left: 100px;
     padding-right: 100px;  
 }
