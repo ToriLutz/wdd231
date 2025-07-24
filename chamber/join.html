@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="victoria lutz">
+    <meta name="description" content="the home page">
     <meta name="OG: author" content="Victoria Lutz">
-    <meta name = "OG:description" content="A directory page with information about the chamber of commerce of Timbuktu">
+    <meta name = "OG:description" content="A landing page with information about the chamber of commerce of Timbuktu">
     <meta name = "OG:title" content = "Directory">
     <meta name="image" content = "https://www.flaticon.com/free-icon/timbuktu_2865106">
     <meta name = "OG:url" content = "https://www.timbuktucommerce.com/directory">
     
 
     <link rel="icon" href="./images/favicon.ico">
-    <title>Timbuktu Chamber of Commerce Directory</title>
+    <title>Timbuktu Chamber of Commerce Home</title>
 
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/style-smaller.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
 
 
 </head>
@@ -27,8 +30,8 @@
         <nav>
             <ul class="navigation body-font nav-menu ">
             <li><a class="body-font" href = "./index.html">Home</a></li>
-            <li><a class="body-font" href = "#">Directory</a></li>
-            <li><a class="body-font" href = "./join.html">Join</a></li>
+            <li><a class="body-font" href = "./directory.html">Directory</a></li>
+            <li><a class="body-font" href = "#">Join</a></li>
             <li><a class="body-font" href = "#">Discover</a></li>
             </ul>
            
@@ -42,16 +45,32 @@
         </nav>
          <img class = "moon" src="./images/half-circle.svg" alt = "half moon phase symbol" loading="lazy">
     </header>
-    <h1 class="head-font">Directory</h1>
-            <button id="grid">Grid</button>
-		    <button id="list">List</button>
-        <section class="businesses grid " id="cards">
+    <main class="contact">
 
-            <script src="./scripts/buisness_cards.js" defer></script>
+                <form method="get" action="thanks.html" class="wf1" id="reviewForm">
+            <fieldset>
+                <div class="head-font">Join Now!</div>
+                <select id="reasonSelect">
+                    <option value="">--Select a Membership!--</option> <!-- Default option -->
+                    <option value="np">Non-Profit</option>
+                    <option value="1">Bronze</option>
+                    <option value="2">Silver</option>
+                    <option value="3">Gold</option>
+                </select>
+                </select>
+                <label class="body-font">Your First Name* <input type="text" name="name" id="fname" placeholder="John"  required></label>
+                <label class="body-font">Your Last Name* <input type="text" name="name" id="lname" placeholder="Smith"  required></label>
+                <label class="body-font">Business Name* <input type="text" name="name" id="businessname" placeholder="The Towers"  required></label>
+                <label class="body-font">Business Description <input type="text" name="description" id="businessdescription" placeholder="a garbage sorting company"> </label>
+                <label class="body-font">Phone Number*<input type="tel" name="phonenumber" placeholder="1234567890" required></label>
+                <label class="body-font">Your Email* <input type="email" name="useremail" id="email" placeholder="someone@hotmail.com" required></label>
+                <input type="hidden" id="timestampField" name="formLoadTimestamp">
+                <input type="submit" id="submit" class="clicks" value="Join Now!"> 
+            </fieldset>
+            </form>
 
-        </section>
-
-
+    </main>
+   
     <footer>
         <div class="timbuk-info">
             <p class="body-font bold"> Timbuktu Chamber of Commerce</p>
@@ -83,6 +102,6 @@
         </div>
 
     </footer>
-    
+    <script src="./scripts/forecast.js" defer></script>  
 </body>
 </html>
