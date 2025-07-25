@@ -13,6 +13,3 @@ document.querySelector('#results'.innerHTML = `<p>Appointment for
     <p> on ${myInfo.get('date')} in the ${myInfo.get('location')} temple
     <p> Your Number : ${myInfo.get('phone')} </p> 
     <p> Your Email: ${myInfo.get('email')}</p>`)
-
-
-
