@@ -6,11 +6,12 @@
 }
 
 .head-font {
-  color: var(--primary-color);
-  font-family: "Nunito", sans-serif;
-  font-weight: 400;
+  font-family: "Sigmar", sans-serif;
+  font-weight: 600;
   font-style: normal;
+  color: var(--primary-color);
 }
+
 
 .body-font {
   color: var(--primary-color);
