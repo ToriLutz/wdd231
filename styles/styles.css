@@ -1,0 +1,34 @@
+:root{
+    --primary-color: #ffff;
+    --secondary-color: #242424;
+    --accent-color: #800000;
+    --secondary-accent: #FF1212;
+}
+
+.head-font {
+  color: var(--primary-color);
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.body-font {
+  color: var(--secondary-color);
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
+
+h1{
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+
+.wireframe{
+    max-width: 700px;
+    position: absolute;
+    left: 500px;
+}
+

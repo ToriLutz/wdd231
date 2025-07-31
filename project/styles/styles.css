@@ -1,8 +1,8 @@
 :root{
     --primary-color: #ffff;
-    --secondary-color: #000;
+    --secondary-color: #242424;
     --accent-color: #800000;
-    --secondary-accent: #e01212;
+    --secondary-accent: #FF1212;
 }
 
 .head-font {
