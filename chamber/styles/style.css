@@ -413,3 +413,42 @@ body::before {
     justify-content: center;
     align-items: center;
 }
+
+.places-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   border: 1px solid black;
+   margin: 3px;
+   width: 40%;
+}
+
+.places-card div h2 {
+    grid-area: name;
+}
+
+.places-card  img {
+    grid-area: photograph;
+}
+
+.places-card div p {
+    grid-area: description;
+}
+
+.places-card address{
+    grid-area: address;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.discover{
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
