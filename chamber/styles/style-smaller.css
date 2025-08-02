@@ -185,6 +185,8 @@
 
 .discover{
 display: grid;
+grid-column: auto;
+
 
 }
 
@@ -194,12 +196,13 @@ display: grid;
   flex-direction: column;
    border: 1px solid black;
    margin: 3px;
-   width: 35%;
-   height: fit-content;
+   width: 50%;
+   grid-area: "photograph name"
+   "description address";
 }
 
 .places-card img{
-    width: 50%;
+    width: 70%;
 }
 
 
