@@ -429,6 +429,13 @@ body::before {
 
 .places-card  img {
     grid-area: photograph;
+    transition: transform 0.3s ease;
+}
+
+.places-card  img:hover {
+    grid-area: photograph;
+    transform: scale(1.1);
+    
 }
 
 .places-card div p {

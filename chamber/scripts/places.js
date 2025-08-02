@@ -37,3 +37,38 @@ const displayPlaces = (places) => {
 }
 
 displayPlaces(places);
+
+//localstorage
+const messageEl = document.getElementById('visitMessage');
+
+
+const lastVisit = localStorage.getItem('lastVisit');
+
+const now = new Date();
+
+if (lastVisit) {
+  const lastVisitDate = new Date(lastVisit);
+  const diffMs = now - lastVisitDate; 
+
+
+  const diffDays = diffMs / (1000 * 60 * 60 * 24);
+  
+  let message = '';
+
+  if (diffDays < 1) {
+    message = "Back so soon! Awesome!";
+  } else if (diffDays < 7) {
+    message = "It's been a few days since your last visit.";
+  } else {
+    message = "It's been a while since your last visit.";
+  }
+
+  
+  document.getElementById('visitMessage').textContent = message;
+} else {
+
+  document.getElementById('visitMessage').textContent = "Welcome! Let us know if you have any questions";
+}
+
+
+localStorage.setItem('lastVisit', now.toISOString());
