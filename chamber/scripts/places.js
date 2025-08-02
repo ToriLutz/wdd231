@@ -1,4 +1,4 @@
-import places from './data/placeData'; 
+import places from './data/placeData.js'; 
 const cards = document.getElementById("place"); 
 
 

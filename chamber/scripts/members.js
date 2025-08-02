@@ -8,10 +8,10 @@ const displayMembers = (members) => {
 
   filteredMembers.forEach((member) => {
     const card = document.createElement("div");
-    card.classList.add("member-card", "padding-none", "grid");
+    card.classList.add("business-card", "padding-none", "grid");
 
     const businessCardHeader = document.createElement("div");
-    businessCardHeader.classList.add("member-card-header", "width-100");
+    businessCardHeader.classList.add("business-card-header", "width-100");
 
     const name = document.createElement("h3");
     name.textContent = member.name;
@@ -26,7 +26,7 @@ const displayMembers = (members) => {
     industry.classList.add("margin-y-2");
 
     const businessCardBody = document.createElement("div");
-    businessCardBody.classList.add("member-card-body");
+    businessCardBody.classList.add("business-card-body");
 
     const businessAddressContainer = document.createElement("div");
 

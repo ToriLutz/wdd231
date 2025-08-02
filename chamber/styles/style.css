@@ -183,7 +183,7 @@ li{
     text-decoration: none;
 }
 
-.business-card {
+.business-card{
   display: flex;
   flex-direction: column;
    border: 1px solid black;
@@ -191,12 +191,12 @@ li{
    width: 25%;
 }
 
-.business-card-header {
+.business-card-header{
    text-align: center;
    border-bottom: 1px solid;
 }
 
-.business-card-body {
+.business-card-body{
    display: flex;
    flex-direction: row;
    padding: 4px;
@@ -400,5 +400,16 @@ body::before {
     display: flex;
     text-align: center;
     justify-content: space-around;
+    align-items: center;
+}
+
+.underline{
+    text-decoration: double;
+}
+
+.members{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
