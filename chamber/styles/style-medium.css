@@ -50,5 +50,10 @@
        transform: translateY(-8px) rotate(-45deg);
    }
 
+   .places-card  img:hover {
+    transform: scale(1.1);
+    
+    }
+
 
 }
