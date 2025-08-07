@@ -26,8 +26,8 @@
         <nav>
             <ul class="navigation head-font nav-menu ">
             <li><a class="head-font underline" href = "#">Home</a></li>
-            <li><a class="head-font" href = "./directory.html">Directory</a></li>
-            <li><a class="head-font" href = "#">Contact</a></li>
+            <li><a class="head-font" href = "#">Directory</a></li>
+            <li><a class="head-font underline" href = "#">Join Now!</a></li>
             <li><a class="head-font" href = "#">Discover</a></li>
             </ul>
            
@@ -42,12 +42,30 @@
 
     </header>
 
-    <main>
-        <div class="hero">
-            <img src="./images/hero.jpg" alt="a woman lifting weights" loading="lazy">
-            <h1 class="head-font hero-text">Welcome to Final Girl Fitness</h1>
-            <h2 class="head-font hero-text">Where fitness meets horror!</h2>
-        </div>
+    <main class="contact">
+        
+        
+                <form method="get" action="thankyou.html" class="form-1" id="reviewForm">
+            <fieldset>
+                <h1 class="head-font">Become A Final Girl</h1>
+                
+                <label class="head-font">Choose Your Membership</label>
+                <select id="reasonSelect" class="form-label membership">
+                    <option value="">--Select a Membership!--</option> <!-- Default option -->
+                    <option value="0" >Free Girl</option>
+                    <option value="1">Bronze Cutlery</option>
+                    <option value="2" >Silver Machete</option>
+                    <option value="3">Golden Chainsaw</option>
+                </select>
+                <br>
+                <label class="body-font form-label">Your First Name* <input type="text" name="fname" id="fname" placeholder="John"  required></label>
+                <label class="body-font form-label">Your Last Name* <input type="text" name="lname" id="lname" placeholder="Smith"  required></label>
+                <label class="body-font form-label">Phone Number*<input type="tel" name="phone" id="phone" placeholder="1234567890" required></label>
+                <label class="body-font form-label">Your Email* <input type="email" name="useremail" id="email" placeholder="someone@hotmail.com" required></label>
+                <input type="hidden" id="timestampField" name="formLoadTimestamp">
+                <input type="submit" id="submit" class="form-1" value="Join If You Dare!"> 
+            </fieldset>
+            </form>
     </main>
     <footer>
 
