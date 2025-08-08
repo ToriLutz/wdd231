@@ -228,7 +228,7 @@ form{
   border-radius: 10px;
   width: 400px;
   max-width: 90%;
-  background-color: var(--accent-tertiary-color);
+  background-color: var(--secondary-color);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 50%;
@@ -283,9 +283,14 @@ body::before {
 
 .box-modals {
     display: flex;
+    flex-direction: column;
     text-align: center;
-    justify-content: space-around;
-    align-items: center;
+    background-color: var(--primary-color);
+    padding: 50px; 
+    border: var(--secondary-accent) 1px solid;
+    border-radius: 5%;
+    justify-content: space-between;
+
 }
 
 .members{
@@ -293,4 +298,47 @@ body::before {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    color: var(--primary-color);
+
+}
+
+.padding-bottom-0 {
+   padding-bottom: 0;
+}
+
+.padding-none {
+   padding: 0 !important;
+}
+
+.margin-y-2 {
+   margin-top: 2px;  
+    margin-bottom: 2px;
+}
+
+.width-100 {
+   width: 100%;
+}
+
+.flex-direction-column {
+   flex-direction: column !important;
+}
+
+.workouts-card{
+  display: flex;
+  flex-direction: column;
+   border: 2px solid var(--secondary-accent);
+   margin: 3px;
+   width: 25%;
+}
+
+.business-card-header{
+   text-align: center;
+   border-bottom: 1px solid;
+}
+
+.business-card-body{
+   display: flex;
+   flex-direction: row;
+   padding: 4px;
+   justify-content: space-between;
 }
