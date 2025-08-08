@@ -342,3 +342,8 @@ body::before {
    padding: 4px;
    justify-content: space-between;
 }
+
+.workouts {
+    display: grid;
+    align-items: center;
+}
