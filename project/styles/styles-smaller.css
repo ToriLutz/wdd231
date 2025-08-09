@@ -201,6 +201,87 @@
     border: 1px solid var(--primary-color);
 }
 
+.contact{
+    height: 1000px;
+    display: grid;
+    justify-content: center;
 
+} 
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    height: 400px;
+    flex-wrap: wrap;
+    
+}
+
+.form-1 {
+  
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    padding-bottom: 23rem ;
+}
+.form-label{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.form-label input[type="tel"],
+.form-label input[type="email"],
+.form-label select {
+    display: block;
+    border-left: solid 4px var(--secondary-accent);
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-1 fieldset{
+    margin: 2rem;
+    border: solid 1px var(--accent-secondary-color);
+    border-radius: 6px;
+    padding: 1rem;
+
+}
+
+.form-label legend{
+    color: var(--primary-color);
+    padding: .5rem;
+}
+
+.form-label label{
+    padding: 1rem;
+    
+}
+
+.form-1 input[type = "submit"]{
+    
+    border: 1px solid var(--accent-secondary-color);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    margin: 2rem 13% -4rem -4%;
+    color: var(--secondary-color);
+}
+
+.form-1 input[type = "submit"]::before{
+    position: absolute;
+    content: '';
+    top: 20px;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    transition: 0.5s;
+    color: var(--secondary-color);
+}
+
+.form-1 input[type = "submit"]:hover{
+    letter-spacing: 4px;
+    color: var(--primary-color);
+    background-color: var(--secondary-accent);
+}
 
 }
