@@ -20,7 +20,7 @@ const displayPlaces = (workouts) => {
     description.innerText = workout.description;
     description.classList.add("body-font");
     const imageurl = document.createElement("img");
-    imageurl.setAttribute("src", workout.photoUrl); 
+    imageurl.setAttribute("src", workout.photourl); 
     imageurl.setAttribute("alt", `Image of ${workout.name}`);
     imageurl.setAttribute("loading", "lazy");
     imageurl.setAttribute("width", "150");

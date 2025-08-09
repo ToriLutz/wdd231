@@ -27,8 +27,8 @@
             <ul class="navigation head-font nav-menu ">
             <li><a class="head-font underline" href = "#">Home</a></li>
             <li><a class="head-font" href = "./directory.html">Directory</a></li>
-            <li><a class="head-font" href = "#">Contact</a></li>
-            <li><a class="head-font" href = "#">Discover</a></li>
+            <li><a class="head-font" href = "./contact.html">Contact</a></li>
+            <li><a class="head-font" href = "./discover.html">Discover</a></li>
             </ul>
            
 
@@ -44,9 +44,14 @@
 
     <main>
         <div class="hero">
-            <img src="./images/hero.jpg" alt="a woman lifting weights" loading="lazy">
-            <h1 class="head-font hero-text">Welcome to Final Girl Fitness</h1>
+            <picture>
+        <source media="(min-width: 900px)" srcset="./images/hero.jpg">
+        <source media="(min-width: 480px)" srcset="./images/hero-image.jpg">
+        <img src="./images/hero-image.jpg" alt="parody picture of jaws, except the shark is coming out of the bathtub">
+        </picture>
+            <h1 class="head-font hero-title">Welcome to Final Girl Fitness</h1>
             <h2 class="head-font hero-text">Where fitness meets horror!</h2>
+            <a href="./contact"><h2 class="button body-font">CLICK HERE IF YOU DARE!</h2></a>
         </div>
     </main>
     <footer>

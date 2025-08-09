@@ -122,19 +122,53 @@ main{
 
 
 .hero-text{
-    position: relative;
+    position: absolute;
     padding: 35px;
     text-align: center;
-    left: 85%;
-    bottom: 150px;
+    left: 4%;
+    top:50%
+}
+.hero-title{
+    position: absolute;
+    padding: 35px;
+    text-align: center;
+    left: 0%;
+    top:45%;
+    
+}
+
+.button{
+    position: absolute;
+    padding: 5px;
+    text-align: center;
+    left: 6%;
+    top:57%;
+    color: var(--secondary-accent);
+    background-color: var(--primary-color);
+    border-radius: 5%;
+    border: 1px solid var(--secondary-accent);
+}
+
+.button:hover{
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+    left: 6%;
+    top:57%;
+    background-color: var(--secondary-accent);
+    color: var(--primary-color);
+    border-radius: 5%;
+    border: 1px solid var(--primary-color);
 }
 
 footer{
     background-color: var(--accent-color);
+    display: flex;
+    justify-content: space-around;
 }
 
 footer img{
-    max-width: 200px;
+    max-width: 100px;
 }
 
 .contact{
@@ -343,9 +377,15 @@ body::before {
    justify-content: space-between;
 }
 
-.workouts {
-    display: grid;
+.grid{
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+}
+.workouts{
+    display: grid;
+    justify-content: center;
 }
 
 .video-gallery-container{
@@ -417,3 +457,4 @@ body::before {
     transform: translate(-50%, -50%);
     transition: opacity 400ms ease;
 }
+
