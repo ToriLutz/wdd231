@@ -347,3 +347,73 @@ body::before {
     display: grid;
     align-items: center;
 }
+
+.video-gallery-container{
+    width: 900px;
+    padding-top: 8px;
+    margin: 0 auto;
+
+}
+
+.video-gallery-container,
+.video-gallery-container *{
+    box-sizing: border-box;
+}
+
+.video-gallery-container h2.title{
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.video-gallery-container .gallery {
+    display: flex;
+    gap: 24px;
+
+}
+
+
+.gallery h3.video-title{
+    line-height: 1.6;
+    font-weight: 700;
+    font-size: 20px;
+    width: 560px;
+}
+
+.thumbnail {
+    width: 220px;
+    cursor: pointer;
+}
+
+.play-icon img{
+    width: 50px;
+    pointer-events: none;
+
+}
+
+
+.all-videos{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+.gallery .video{
+    position: relative;
+}
+
+.gallery .video .play-icon:hover{
+ opacity: 1;
+}
+
+.gallery .play-icon{
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    bottom: 71%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 400ms ease;
+}
