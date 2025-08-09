@@ -432,7 +432,7 @@ body::before {
 }
 
 
-.all-videos{
+#all-videos{
     display: flex;
     flex-direction: column;
     gap: 8px;
