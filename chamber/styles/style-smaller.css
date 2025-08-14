@@ -192,14 +192,14 @@ grid-column: auto;
 
 
 .places-card{
-  display: grid;
-  flex-direction: column;
-   border: 1px solid black;
-   margin: 3px;
-   width: 50%;
-   grid-template-areas: "photograph name"
-   "description address";
-}
+    display: grid;
+   grid-template-areas: 
+   "name"
+   "description"
+   'photograph'
+   "address"
+   ;
+    }
 
 .places-card img{
     width: 70%;

@@ -415,6 +415,14 @@ body::before {
 }
 
 .places-card{
+    display: grid;
+   grid-template-areas: 
+   "name photograph"
+   "description"
+   "address"
+   ;
+}
+.places-card{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
